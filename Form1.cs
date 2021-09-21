@@ -31,10 +31,12 @@ namespace part_4_random_numbers
         private void dblBtn_Click(object sender, EventArgs e)
         {
             double randomDbl;
-            double minValue = Convert.ToDouble(txtMinValue.Text);
-            double maxValue = Convert.ToDouble(txtMaxValue.Text);
-            randomDbl = generator.NextDouble(minValue, maxValue);
-            lblOutput.Text = randomDbl + "";
+            int randomInt;
+            int minValue = Convert.ToInt32(txtMinValue.Text);
+            int maxValue = Convert.ToInt32(txtMaxValue.Text);
+            randomInt = generator.Next(minValue, maxValue);
+            randomDbl = generator.NextDouble();
+            lblOutput.Text = (randomDbl + randomInt) + "";
         }
     }
 }
