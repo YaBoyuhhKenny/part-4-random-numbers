@@ -21,8 +21,8 @@ namespace part_4_random_numbers
         private void btnInt_Click(object sender, EventArgs e)
         {
             int randomInt;
-            int minValue = Convert.ToInt32(txtMinValue.Text);
-            int maxValue = Convert.ToInt32(txtMaxValue.Text);
+            int minValue = Convert.ToInt32(minUpDown.Value);
+            int maxValue = Convert.ToInt32(maxUpDown.Value);
             randomInt = generator.Next(minValue, maxValue);
             lblOutput.Text = randomInt + "";
             
@@ -32,8 +32,8 @@ namespace part_4_random_numbers
         {
             double randomDbl;
             int randomInt;
-            int minValue = Convert.ToInt32(txtMinValue.Text);
-            int maxValue = Convert.ToInt32(txtMaxValue.Text);
+            int minValue = Convert.ToInt32(minUpDown.Value);
+            int maxValue = Convert.ToInt32(maxUpDown.Value);
             randomInt = generator.Next(minValue, maxValue);
             randomDbl = generator.NextDouble();
             lblOutput.Text = (randomDbl + randomInt) + "";

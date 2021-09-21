@@ -31,11 +31,13 @@
             this.lblInstructions = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.lblMax = new System.Windows.Forms.Label();
-            this.txtMinValue = new System.Windows.Forms.TextBox();
-            this.txtMaxValue = new System.Windows.Forms.TextBox();
             this.btnInt = new System.Windows.Forms.Button();
             this.dblBtn = new System.Windows.Forms.Button();
             this.lblOutput = new System.Windows.Forms.Label();
+            this.minUpDown = new System.Windows.Forms.NumericUpDown();
+            this.maxUpDown = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.minUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // lblInstructions
@@ -68,20 +70,6 @@
             this.lblMax.TabIndex = 2;
             this.lblMax.Text = "Maximum";
             // 
-            // txtMinValue
-            // 
-            this.txtMinValue.Location = new System.Drawing.Point(79, 34);
-            this.txtMinValue.Name = "txtMinValue";
-            this.txtMinValue.Size = new System.Drawing.Size(38, 20);
-            this.txtMinValue.TabIndex = 3;
-            // 
-            // txtMaxValue
-            // 
-            this.txtMaxValue.Location = new System.Drawing.Point(79, 64);
-            this.txtMaxValue.Name = "txtMaxValue";
-            this.txtMaxValue.Size = new System.Drawing.Size(37, 20);
-            this.txtMaxValue.TabIndex = 4;
-            // 
             // btnInt
             // 
             this.btnInt.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,22 +100,38 @@
             this.lblOutput.Size = new System.Drawing.Size(0, 13);
             this.lblOutput.TabIndex = 7;
             // 
+            // minUpDown
+            // 
+            this.minUpDown.Location = new System.Drawing.Point(78, 38);
+            this.minUpDown.Name = "minUpDown";
+            this.minUpDown.Size = new System.Drawing.Size(41, 20);
+            this.minUpDown.TabIndex = 8;
+            // 
+            // maxUpDown
+            // 
+            this.maxUpDown.Location = new System.Drawing.Point(78, 64);
+            this.maxUpDown.Name = "maxUpDown";
+            this.maxUpDown.Size = new System.Drawing.Size(41, 20);
+            this.maxUpDown.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(236, 183);
+            this.Controls.Add(this.maxUpDown);
+            this.Controls.Add(this.minUpDown);
             this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.dblBtn);
             this.Controls.Add(this.btnInt);
-            this.Controls.Add(this.txtMaxValue);
-            this.Controls.Add(this.txtMinValue);
             this.Controls.Add(this.lblMax);
             this.Controls.Add(this.lblMin);
             this.Controls.Add(this.lblInstructions);
             this.Name = "Form1";
             this.Text = "Random numbers";
+            ((System.ComponentModel.ISupportInitialize)(this.minUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,11 +142,11 @@
         private System.Windows.Forms.Label lblInstructions;
         private System.Windows.Forms.Label lblMin;
         private System.Windows.Forms.Label lblMax;
-        private System.Windows.Forms.TextBox txtMinValue;
-        private System.Windows.Forms.TextBox txtMaxValue;
         private System.Windows.Forms.Button btnInt;
         private System.Windows.Forms.Button dblBtn;
         private System.Windows.Forms.Label lblOutput;
+        private System.Windows.Forms.NumericUpDown minUpDown;
+        private System.Windows.Forms.NumericUpDown maxUpDown;
     }
 }
 
